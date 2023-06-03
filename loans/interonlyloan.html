@@ -39,12 +39,65 @@
 
       .bg-cover {
          background-size: cover !important;
-         padding-top: 200px
+         padding-top: 200px;
+         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))
       }
 
       body {
         min-height: 100vh;
       }
+
+      body {
+  margin: 0;
+  /* font-family: "Roboto", sans-serif; */
+  overflow-x: hidden;
+}
+
+.big-image {
+  height: 50vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay h1 {
+  font-size: 65px;
+  letter-spacing: 0px;
+  margin: 0 0 5px;
+}
+
+.overlay p {
+  margin: 0;
+  font-size: 28px;
+}
+
+#vids {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+
+#vids a:first-of-type {
+  margin-bottom: 5px;
+}
 
     </style>
 
@@ -114,30 +167,15 @@
 </header>
 
 <main id="main">
-  <!-- <section class="section"> -->
-    <!-- <div class="container"> -->
-  <div style="background: url(https://bootstrapious.com/i/snippets/sn-static-header/background.jpg)" class="jumbotron bg-cover text-white">
-    <div class="container py-5 text-center">
-        <h1 class="display-4 font-weight-bold">Bootstrap static header</h1>
-        <p class="font-italic mb-0">Using simple jumbotron-style component, create a nice Bootstrap 4 header with a background image.</p>
-        <p class="font-italic">Snippe by</p>
-        <a href="../contactus.html" role="button" class="btn btn-primary px-5">Apply Now</a>
-    </div>
+<div class="big-image">
+  <div class="overlay">
+    <h1>City Loan</h1>
+    <p>City Loans are available any time!</p>
+    <br>
+    <a href="../contactus.html" role="button" class="btn btn-primary px-5">Apply Now</a>
+  </div>
 </div>
-
-    <section class="section">
-      <div class="container">
-        <div class="row mb-4 align-items-center">
-          <div class="col-md-6" data-aos="fade-up">
-
-            <h2>My Services</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
-              explicabo inventore.</p>
-
-            </div>
-        </div>
-      </div>
-
+<br>
       <div class="site-section pb-0 services">
         <div class="container">
 
